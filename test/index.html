@@ -3,10 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style src="index.css"/>
+    <title>TextQuest Prot.</title>
+    <link rel="icon" type="image/x-icon" href="./images/working.ico"/>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
 </head>
-<body>
-    <span>Dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</span>
+<body class="body">
+       <script src="./js/text.js"></script>
+    <div class="Narrator">
+        <div>
+            <h1 style="text-align: center;">Narrator</h1>
+            <p id="typewrite-demo"></p>
+        </div>
+        <div>
+            <span class="answerA"> A:<span>Yes</span> </span>
+            <span class="answerB"> B:<span>No</span> </span>
+        </div>
+    </div>
+    <div class="BottomSlice">
+        <div class="InputSpace">
+            <textarea style="width: 99%;
+                             height: 95%;
+                             background-color: transparent;
+                             color:aliceblue;
+                             font-size: 20px;">
+
+            </textarea>
+        </div>    
+        <div class="OptionSpace">
+            <button onclick="typeWriterWrapper()">Start</button>
+            <button>A</button>
+            <button>B</button>
+            <button onclick="togleNarrator()">Change Narrator</button>
+            <!-- DEV -->
+            <!-- <button onclick="Debug()">Debug</button> -->
+        </div>
+    </div>
 </body>
 </html>
